@@ -19,6 +19,7 @@ class JsonHelper
      */
     public static function encode($value, $options = 0, $depth = 512)
     {
+        $content = str_replace('jijia-app.test.upcdn.net', 'img.5jija.com', $data);
         return json_encode($value, $options, $depth);
     }
 
